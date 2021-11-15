@@ -1,6 +1,10 @@
 #include "converters.h"
 
 namespace Pulu {
+    uint16_t Converters::double_to_uint16(double value) {
+        return (uint16_t)(value*1000)
+    }
+
     LoRaMessage Converters::sensorValues_to_LoRaMessage(sensorValues values) {
         LoRaMessage message;
         Converters_DEBUG("Creating LoRaMessage");

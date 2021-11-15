@@ -11,6 +11,7 @@
 namespace Pulu {
     class Converters {
         public:
+            static uint16_t double_to_uint16(double value);
             static LoRaMessage sensorValues_to_LoRaMessage(sensorValues values);
     };
 };
