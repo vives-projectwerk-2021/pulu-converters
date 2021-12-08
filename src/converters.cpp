@@ -11,7 +11,7 @@ namespace Pulu {
         .addUint16(values.moisture[1])
         .addUint16(values.moisture[2])
         .addUint16(values.moisture[3])
-        .addUint16(uint16_t (100*(values.battery/3.6)));
+        .addUint16((uint16_t)((100*100*values.battery)/3.6));
         Converters_DEBUG("LoRaMessage created");
         return message;
     };
