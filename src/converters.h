@@ -1,6 +1,6 @@
 #pragma once
 
-#include "sensorValues.h"
+#include "measurement.h"
 #include "LoRaMessage.h"
 
 #define Converters_DEBUG(x, ...)   //set as comment to enable debugging
@@ -11,6 +11,6 @@
 namespace Pulu {
     class Converters {
         public:
-            static LoRaMessage sensorValues_to_LoRaMessage(sensorValues values);
+            static LoRaMessage measurement_to_LoRaMessage(measurement m);
     };
 };
